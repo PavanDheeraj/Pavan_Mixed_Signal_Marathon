@@ -1,0 +1,35 @@
+* /home/pavandheeraj1999/eSim-Workspace/hbp_sync/hbp_sync.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Mon 03 Oct 2022 10:33:49 PM IST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  clk_a GND pulse		
+v2  clk_b GND pulse		
+v3  rst GND pulse		
+v4  pusle_in GND pulse		
+U5  clk_a clk_b rst pusle_in Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U4-Pad3_ Net-_U4-Pad4_ adc_bridge_4		
+SC1  nand_out ff_b2_out Net-_SC1-Pad3_ ? sky130_fd_pr__pfet_01v8		
+SC4  nand_out not_out Net-_SC1-Pad3_ ? sky130_fd_pr__pfet_01v8		
+SC2  nand_out ff_b2_out Net-_SC2-Pad3_ ? sky130_fd_pr__nfet_01v8		
+SC3  Net-_SC2-Pad3_ not_out GND ? sky130_fd_pr__nfet_01v8		
+SC5  and_out nand_out Net-_SC5-Pad3_ ? sky130_fd_pr__pfet_01v8		
+SC6  and_out nand_out GND ? sky130_fd_pr__nfet_01v8			
+U4  Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U4-Pad3_ Net-_U4-Pad4_ Net-_U4-Pad5_ Net-_U4-Pad6_ Net-_U4-Pad7_ pavan_handshake_pulse_sync_update		
+v5  Net-_SC1-Pad3_ GND DC		
+v6  Net-_SC5-Pad3_ GND DC		
+U6  Net-_U4-Pad5_ Net-_U4-Pad6_ Net-_U4-Pad7_ ff_b2_out not_out busy dac_bridge_3		
+U2  clk_a plot_v1		
+U3  clk_b plot_v1		
+U8  nand_out plot_v1		
+U9  and_out plot_v1		
+U7  busy plot_v1		
+scmode1  SKY130mode		
+U10  rst plot_v1		
+U11  pusle_in plot_v1		
+U12  ff_b2_out plot_v1		
+U13  not_out plot_v1		
+
+.end
