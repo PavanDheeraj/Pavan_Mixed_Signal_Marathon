@@ -227,7 +227,7 @@ endmodule
 ![hbp_sync_out](https://user-images.githubusercontent.com/58168687/194344113-41d6a9f3-5ab3-49bf-baeb-10298ee73cbd.PNG)
 ```
 From the waveform, it is observed that the pulse signal is synchronized from clock domain A to clock domain B. 
-and_out is the synchronized output in clock domain B.
+and_out is the synchronized output in clock domain B. Also, it is noted that busy signal is asserted to indicate source of the pulse to not generate another pulse until the current pulse is synchronized.
 ```
 ![image](https://user-images.githubusercontent.com/58168687/194345005-ef0042a4-124d-44c6-9b98-bf1b02da3af1.png)
 ![image](https://user-images.githubusercontent.com/58168687/194345271-e258b231-a41c-4fd9-a8b0-2c616c648d66.png)
@@ -246,9 +246,9 @@ and_out is the synchronized output in clock domain B.
 2. Clone this project using the following command:</br>
 ```git clone https://github.com/PavanDheeraj/Pavan_Mixed_Signal_Marathon.git ```</br>
 3. Change directory:</br>
-```cd eSim_project_files/xor_xnor```</br>
+```cd hbp_sync```</br>
 4. Run ngspice:</br>
-```ngspice xor_xnor.cir.out```</br>
+```ngspice hbp_sync.cir.out```</br>
 5. To run the project in eSim:
 
   - Run eSim</br>
@@ -261,7 +261,6 @@ and_out is the synchronized output in clock domain B.
 4. Sumanto Kar, eSim Team, FOSSEE
 
 ## References
-1. Ahmad, Nabihah & Hasan, Rezaul. (2011). A new design of XOR-XNOR gates for low power application. 10.1109/ICEDSA.2011.5959039. 
-2. K. Ravali, N. R. Vijay, S. Jaggavarapu and R. Sakthivel, "Low power XOR gate design and its applications," 2017 Fourth International Conference on Signal Processing, Communication and Networking (ICSCN), 2017, pp. 1-4, doi: 10.1109/ICSCN.2017.8085699.
-3. https://github.com/Eyantra698Sumanto/Two-in-One-Low-power-XOR-XNOR-Gate.git
+1. https://www.edn.com/synchronizer-techniques-for-multi-clock-domain-socs-fpgas
+2. https://github.com/Eyantra698Sumanto/Two-in-One-Low-power-XOR-XNOR-Gate.git
 
