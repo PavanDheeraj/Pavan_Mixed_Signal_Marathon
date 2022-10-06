@@ -227,7 +227,7 @@ endmodule
 ![hbp_sync_out](https://user-images.githubusercontent.com/58168687/194344113-41d6a9f3-5ab3-49bf-baeb-10298ee73cbd.PNG)
 ```
 From the waveform, it is observed that the pulse signal is synchronized from clock domain A to clock domain B. 
-and_out is the synchronized output in clock domain B. Also, it is noted that busy signal is asserted to indicate source of the pulse to not generate another pulse until the current pulse is synchronized.
+"**and_out**" is the synchronized output in clock domain B. Also, it is noted that busy signal is asserted to indicate source of the pulse to not generate another pulse until the current pulse is synchronized.
 ```
 ![image](https://user-images.githubusercontent.com/58168687/194345005-ef0042a4-124d-44c6-9b98-bf1b02da3af1.png)
 ![image](https://user-images.githubusercontent.com/58168687/194345271-e258b231-a41c-4fd9-a8b0-2c616c648d66.png)
