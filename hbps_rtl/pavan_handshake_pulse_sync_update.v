@@ -1,3 +1,6 @@
+// Author: Pavan Dheeraj K
+// Version: 1
+
 `timescale 1ns/1ps
 
 module pavan_handshake_pulse_sync_update(
