@@ -267,5 +267,5 @@ From the waveform, it is observed that the pulse signal is synchronized from clo
 
 ## References
 1. https://www.edn.com/synchronizer-techniques-for-multi-clock-domain-socs-fpgas
-2. https://github.com/Eyantra698Sumanto/Two-in-One-Low-power-XOR-XNOR-Gate.git
+2. https://github.com/Eyantra698Sumanto/XOR-XNOR-Gate.git
 
