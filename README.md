@@ -34,7 +34,7 @@ This project presents the design of a handshake based pulse synchronizer that is
 ![image](https://user-images.githubusercontent.com/58168687/194340000-98516602-2577-45dd-8ebb-ee8b41cd6e03.png)
 
 ## Circuit Details
-The circuit is divided into two namely, digital and analog part which cumulatively makes up the mixed signal circuit. The digital part is composed of a set of flip flops clocked at different frequencies, a set of 2:1 MUX, a NOT gate and an OR gate. The analog portion is comprised of AND gate implemented using CMOS logic. The pulse signal in clock domain A cannot be directly passed to clock domain B, so we first convert the pulse to a level signal. This method ensures that pulse signal is passed from fast clock domain to a slower clock domain without any error. On the other side, we use an AND gate to recreate the pulse signal in another clock domain. 
+The circuit is divided into two namely, digital and analog part which cumulatively makes up the mixed signal circuit. The digital part is composed of a set of flip flops clocked at different frequencies, a set of 2:1 MUX, a NOT gate and an OR gate. The analog portion is comprised of AND gate implemented using CMOS logic. The AND gate is implemented using a NAND gate followed by a NOT gate. Both NAND and NOT gate have been implemented using nfet and pfet available in the SKY130 PDK. The pulse signal in clock domain A cannot be directly passed to clock domain B, so we first convert the pulse to a level signal. This method ensures that pulse signal is passed from fast clock domain to a slower clock domain without any error. On the other side, we use an AND gate to recreate the pulse signal in another clock domain. 
 
 ## Software Used
 ### eSim
