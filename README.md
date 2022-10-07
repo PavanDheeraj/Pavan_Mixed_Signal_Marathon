@@ -27,7 +27,6 @@ A modern SoC has multiple clock domains. If these different clock domains are no
 		• Handshaking based synchronizers
 		• Mux based synchronizers
 		• Two clock FIFO synchronizer.
-***
 This project presents the design of a handshake based pulse synchronizer that is used to synchronize a pulse generated in source clock domain to destination clock domain. A pulse cannot be synchronized directly using 2 Flip Flop synchronizer, while synchronizing from fast clock domain to slow clock domain using 2 Flip Flop synchronizer, the pulse can be skipped which can cause the loss of pulse detection & hence subsequent circuit which depends upon it, may not function properly. In handshake based pulse synchronizer, synchronization of a pulse generated into source clock domain is guaranteed into destination clock domain by providing an acknowledgement. This method of providing an acknowledgement overcomes the drawback of pulse synchronizer.
 
 ## Reference Circuit Diagram
