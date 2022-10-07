@@ -22,11 +22,10 @@
 
 ## Abstract
 A modern SoC has multiple clock domains. If these different clock domains are not properly synchronized, metastability events are bound to happen and may result in inappropriate behavior of the SoC. A Synchronizer helps us to mitigate/reduce the effect of metastability. A synchronizer is a digital circuit that converts signal from a different clock domain into the recipient clock domain so that it can be captured without introducing any metastability failure. There are different types of synchronizers used in various situations such as:
-***
-		• Flip-flop based synchronizer (Two flip-flop synchronizer)
-		• Handshaking based synchronizers
-		• Mux based synchronizers
-		• Two clock FIFO synchronizer.
+		*• Flip-flop based synchronizer (Two flip-flop synchronizer)
+		*• Handshaking based synchronizers
+		*• Mux based synchronizers
+		*• Two clock FIFO synchronizer.
 This project presents the design of a handshake based pulse synchronizer that is used to synchronize a pulse generated in source clock domain to destination clock domain. A pulse cannot be synchronized directly using 2 Flip Flop synchronizer, while synchronizing from fast clock domain to slow clock domain using 2 Flip Flop synchronizer, the pulse can be skipped which can cause the loss of pulse detection & hence subsequent circuit which depends upon it, may not function properly. In handshake based pulse synchronizer, synchronization of a pulse generated into source clock domain is guaranteed into destination clock domain by providing an acknowledgement. This method of providing an acknowledgement overcomes the drawback of pulse synchronizer.
 
 ## Reference Circuit Diagram
