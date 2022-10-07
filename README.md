@@ -21,7 +21,7 @@
 - [References](#references)
 
 ## Abstract
-A modern SoC has multiple clock domains. If these different clock domains are not properly synchronized, metastability events are bound to happen and may result in inappropriate behavior of the SoC. A Synchronizer help us to mitigate/reduce the effect of metastability. A synchronizer is a digital circuit that converts signal from a different clock domain into the recipient clock domain so that it can be captured without introducing any metastability failure. There are different types of synchronizers used in various situations such as:
+A modern SoC has multiple clock domains. If these different clock domains are not properly synchronized, metastability events are bound to happen and may result in inappropriate behavior of the SoC. A Synchronizer helps us to mitigate/reduce the effect of metastability. A synchronizer is a digital circuit that converts signal from a different clock domain into the recipient clock domain so that it can be captured without introducing any metastability failure. There are different types of synchronizers used in various situations such as:
 • Flip-flop based synchronizer (Two flip-flop synchronizer)
 • Handshaking based synchronizers
 • Mux based synchronizers
